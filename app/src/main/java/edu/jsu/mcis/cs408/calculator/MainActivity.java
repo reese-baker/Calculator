@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import java.beans.PropertyChangeEvent;
-
+import java.math.BigDecimal;
 
 
 public class MainActivity extends AppCompatActivity implements AbstractView {
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements AbstractView {
     private ActivityMainBinding binding;
 
     private CalculatorController controller;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

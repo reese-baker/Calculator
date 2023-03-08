@@ -1,6 +1,8 @@
 package edu.jsu.mcis.cs408.calculator;
 
 import android.util.Log;
+
+import java.math.BigDecimal;
 import java.util.HashMap;
 
 public class CalculatorController extends AbstractController {
@@ -8,7 +10,7 @@ public class CalculatorController extends AbstractController {
     public static final String KEY_PROPERTY = "Key";
     public static final String SCREEN_PROPERTY = "Screen";
     private static final String TAG = "CalculatorController";
-
+    private CalculatorModel model;
     public void changeKey(String newText) {
         setModelProperty(KEY_PROPERTY, newText);
     }
@@ -69,5 +71,4 @@ public class CalculatorController extends AbstractController {
             Log.i(TAG, "Error: " + tag);
         }
     }
-
 }
